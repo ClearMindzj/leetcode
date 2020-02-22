@@ -9,7 +9,24 @@ import java.util.Queue;
  * 使用优先队列
  */
 public class Solution23Method3 {
-    public ListNode mergeKLists(ListNode[] lists) {
+    public static void main(String[] args) {
+        ListNode head1=new ListNode(3);
+        head1.next=new ListNode(4);
+        head1.next.next=new ListNode(5);
+
+        ListNode head2=new ListNode(1);
+        head2.next=new ListNode(3);
+        head2.next.next=new ListNode(4);
+
+        ListNode head3=new ListNode(2);
+        head3.next=new ListNode(6);
+        ListNode[] lists={head1,head2,head3};
+         mergeKLists(lists);
+
+
+
+    }
+    public static ListNode mergeKLists(ListNode[] lists) {
         //定义优先队列的比较器
         Comparator<ListNode> cmp=new Comparator<ListNode>() {
             @Override
@@ -38,6 +55,10 @@ public class Solution23Method3 {
                 q.add(next);
             }
         }
+            while (head.next!=null){
+                head=head.next;
+                System.out.print(head.val+" ");
+            }
         return head.next;
     }
 }
