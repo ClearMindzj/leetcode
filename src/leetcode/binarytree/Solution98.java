@@ -2,6 +2,7 @@ package leetcode.binarytree;
 
 /**
  * Created by zhengjie on 2020/2/25.
+ * 验证二叉搜索树
  */
 public class Solution98 {
     public static void main(String[] args) {

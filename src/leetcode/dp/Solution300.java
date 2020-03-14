@@ -2,6 +2,7 @@ package leetcode.dp;
 
 /**
  * Created by zhengjie on 2020/1/8.
+ * 最长上升子序列
  */
 public class Solution300 {
     public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class Solution300 {
         for (int i = 1; i <= nums.length; i++) {
             dp[i] = 1;
         }
-        for (int i = 1; i <= nums.length; i++) {
+        for (int i = 2; i <= nums.length; i++) {
             for (int j = 1; j < i; j++) {
                 if (nums[j - 1] < nums[i - 1]) {
                     dp[i] = Math.max(dp[i],dp[j]+1);

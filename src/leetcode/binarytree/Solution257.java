@@ -19,7 +19,7 @@ public class Solution257 {
             return;
         str+=String.valueOf(root.val);//返回String类型的root.val的值
         if(root.left==null&&root.right==null) list.add(str);
-        if(root.left!=null)  strAdd(list,root.left,str+"->");//是void类型，不需要写return。
+        if(root.left!=null)  strAdd(list,root.left,str+"->");// 是void类型，不需要写return。
         if(root.right!=null) strAdd(list,root.right,str+"->");
 
     }

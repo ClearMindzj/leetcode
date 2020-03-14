@@ -11,7 +11,7 @@ public class Solution95 {
     public static void main(String[] args) {
         List<TreeNode> ans = new ArrayList<TreeNode>();
         Solution95 s=new Solution95();
-        ans=s.getAns(1,3);
+        ans=s.getAns(1,4);
 
 
     }
