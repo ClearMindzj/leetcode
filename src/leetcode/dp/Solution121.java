@@ -13,8 +13,9 @@ public class Solution121 {
             int right=0;
             int max=0;
             for(;right<m;right++){
-                if(prices[right]>prices[left])
-                    max=Math.max(max,prices[right]-prices[left]);
+                if(prices[right]>prices[left]) {
+                    max = Math.max(max, prices[right] - prices[left]);
+                }
                 else {
                     left=right;
                 }

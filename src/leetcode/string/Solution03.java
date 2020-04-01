@@ -9,7 +9,7 @@ import java.util.HashMap;
 public class Solution03 {
     public static void main(String[] args) {
         Solution03 solution03=new Solution03();
-        System.out.println(solution03.lengthOfLongestSubstring("acbabc"));
+        System.out.println(solution03.lengthOfLongestSubstring("abba"));
     }
     public int lengthOfLongestSubstring(String s) {
         HashMap<Character,Integer> map=new HashMap<>();
@@ -17,6 +17,7 @@ public class Solution03 {
         int ans=0;
         for (int j= 0,i=0; j <len ; j++) {
             if(map.containsKey(s.charAt(j))){
+                //为什么要max，因为后面可能出现重复的，不能再回到前面
                 i=Math.max(map.get(s.charAt(j)),i);
             }
             ans=Math.max(ans,j-i+1);

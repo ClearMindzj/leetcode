@@ -13,6 +13,7 @@ public class Solution92 {
         System.out.println(solution92.backPack(10,a));
         System.out.println(solution92.backPack(12,b));
     }
+    //dp[i][j] 偷第i件物品时还剩余j容量
     public int backPack(int m, int[] A) {
         int n=A.length;
         int[][] dp=new int[n+1][m+1];

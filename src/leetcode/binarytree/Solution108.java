@@ -9,15 +9,15 @@ public class Solution108 {
         if(nums.length==0){
             return null;
         }
-        return sortedArrayToBSTHelp(nums,0,nums.length);
+        return sortedArrayToBSTHelp(nums,0,nums.length-1);
     }
     public TreeNode sortedArrayToBSTHelp(int[]nums,int start,int end){
-        if(start==end){
+        if(start>end){
             return null;
         }
         int mid=(start+end)/2;
         TreeNode root=new TreeNode(nums[mid]);
-        root.left=sortedArrayToBSTHelp(nums,start,mid);
+        root.left=sortedArrayToBSTHelp(nums,start,mid-1);
         root.right=sortedArrayToBSTHelp(nums,mid+1,end);
         return root;
     }

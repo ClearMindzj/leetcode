@@ -6,6 +6,7 @@ import java.util.Map;
 
 /**
  * Created by zhengjie on 2019/12/28.
+ * 8皇后
  */
 public class Solution51 {
     public static List<List<String>> output;

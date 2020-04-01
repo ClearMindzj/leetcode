@@ -12,7 +12,7 @@ public class Solution83 {
         while (fast!=null){
             if(slow.val!=fast.val){
                slow.next=fast;
-               slow=fast;
+               slow=slow.next;
             }
             fast=fast.next;
         }

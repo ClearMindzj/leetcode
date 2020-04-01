@@ -16,10 +16,13 @@ public class Main {
             int alength = length / 2;
             int leftA[] = Arrays.copyOfRange(A,0, alength);
             int rightA[] = Arrays.copyOfRange(A, alength, length);
+            //统计左半边
             getReverseCount(leftA);
+            //统计右半边
             getReverseCount(rightA);
             mergeArray(A, leftA, rightA);
         }
+
     }
    //根据judge值判断，获取数组A的左半边元素或者右半边元素
     /*public int[] getHalfArray(int[] A, int judge) {

@@ -38,7 +38,8 @@ public class Solution113DFS {
 
     }
     public void dfs(TreeNode root, List<List<Integer>> res, List<Integer> temp, int sum){
-        if(root == null) return;
+        if(root == null)
+            return;
         temp.add(root.val);
         if(root.left == null && root.right == null && sum == root.val){
             res.add(new ArrayList<>(temp));

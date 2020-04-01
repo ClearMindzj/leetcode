@@ -3,9 +3,9 @@ package leetcode.binarytree;
 /**
  * Created by zhengjie on 2020/3/3.
  */
-public class Solution404 {
+public class Solution404左叶子之和 {
+    int sum=0;
     public int sumOfLeftLeaves(TreeNode root) {
-        int sum=0;
        if(root==null){
            return 0;
        }

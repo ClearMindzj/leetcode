@@ -2,6 +2,7 @@ package leetcode.binarytree;
 
 /**
  * Created by zhengjie on 2020/2/28.
+ * 路劲总和
  */
 public class Solution112 {
     public static void main(String[] args) {
