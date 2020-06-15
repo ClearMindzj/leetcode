@@ -13,7 +13,7 @@ public class Main字符串排序 {
         while(in.hasNext()){
             String str = in.nextLine();
             char[] chr = str.toCharArray();
-            List<Character> list = new LinkedList();
+            List<Character> list = new ArrayList<>();
             for(Character ch : chr){
                 if(Character.isLetter(ch))
                     list.add(ch);

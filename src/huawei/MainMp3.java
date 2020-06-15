@@ -42,11 +42,13 @@ public class MainMp3 {
         char[] ch = str.toCharArray();
         int begin = 1, cur = 1; // 起始序号，当前歌曲序号
         for (int i = 0; i < ch.length; i++) {
+            //begin==1可以不需要这个条件
             if (begin==1 && cur == 1 && ch[i] == 'U') { // 光标在第一页 ,第一首歌曲上时,按Up键光标
                 cur = n;
                 begin = n-3;
                 continue;
             }
+            //begin==3也可以不需要这个条件
             if (begin==n-3 && cur == n && ch[i] == 'D') { // 光标在最后一页,最后一首歌曲时，按Down键光标
                 cur   = 1;
                 begin = 1;

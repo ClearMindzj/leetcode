@@ -10,8 +10,8 @@ import Demo.niuke.Solution;
 public class Solution33 {
     public static void main(String[] args) {
         Solution33 solution33=new Solution33();
-        int[] nums={3,1};
-        System.out.println(solution33.search(nums,3));
+        int[] nums={4,5,6,7,0,1,2};
+        System.out.println(solution33.search(nums,0));
     }
     public int search(int[] nums, int target) {
          int low=0;
